@@ -30,7 +30,7 @@ a:active {
     justify-content: space-around;
     bottom: 0;
     position: fixed;
-    background: black;
+    background: #000000;
     align-items: center;
     transition: 100ms;
 }
@@ -162,7 +162,7 @@ p.titulo-categoria {
 }
 .imagenes-peliculas-series {
     width: 100%;
-    height: 200px;
+    height: fit-content;
     overflow: auto;
     padding: 0px 10px;
     display: flex
@@ -170,9 +170,11 @@ p.titulo-categoria {
 }
 
 img.img-peliculas-series-img {
-    width: 330px;
+    width: 25%;
     padding: 10px;
     border-radius: 19px;
+    height: fit-content;
+    min-width: 230px;
 }
 .espacio{
     width: 100%;
