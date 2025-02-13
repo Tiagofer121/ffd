@@ -1,11 +1,11 @@
 :root {
-    --Evolum: #082bc2;
+    --Evolum: #c20836;
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: 100ms;
+    transition: 300ms;
     text-align: center;
 
 }
@@ -23,8 +23,7 @@ a:active {
   -webkit-tap-highlight-color: transparent;
 }
 .menu {
-    width: 90%;
-    margin: 0px 5% 10px;
+    width: 100%;
     height: 60px;
     overflow: hidden;
     display: flex;
@@ -33,8 +32,6 @@ a:active {
     position: fixed;
     background: #000000cf;
     align-items: center;
-    border-radius: 30px;
-    backdrop-filter: blur(1px);
     transition: 100ms;
 }
 .opciones-texto-svg {
@@ -89,7 +86,7 @@ a.boton-ver-pelicula-imagen-grande {
     width: fit-content;
     height: fit-content;
     margin: 0px 0px 60px;
-    background: #00000069;
+    background: #c2083633;
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
@@ -100,7 +97,7 @@ a.boton-ver-pelicula-imagen-grande {
     align-items: center;
 }
 a.boton-ver-pelicula-imagen-grande:hover {
-    background: #000000;
+    background: var(--Evolum);
 }
 
 svg.play-svg {
@@ -141,16 +138,44 @@ input.buscador-input {
     outline: none;
     text-align: left;
     padding: 0px 0px 0px 10px;
-    font-family: 'MiFuente';
     letter-spacing: .5px;
 }
-svg.iconos-svg-lupa:hover{
-    stroke: var(--Evolum)
-}
+
 svg.iconos-svg-lupa{
     width: 30px;
     height: 30px;
     margin: 0px 10px;
     stroke: white;
     cursor: pointer;
+}
+.peliculas-series {
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+}
+p.titulo-categoria {
+    color: white;
+    text-align: justify;
+    width: fit-content;
+    margin: 0px 0px 20px 10px;
+    font-family: 'MiFuente';
+    font-size: 1rem;
+}
+.imagenes-peliculas-series {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    padding: 0px 10px;
+    display: flex
+;
+}
+
+img.img-peliculas-series-img {
+    width: 330px;
+    padding: 10px;
+    border-radius: 19px;
+}
+.espacio{
+    width: 100%;
+    height: 70px;
+    background-color: black;
 }
