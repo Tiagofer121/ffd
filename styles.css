@@ -30,7 +30,7 @@ a:active {
     justify-content: space-around;
     bottom: 0;
     position: fixed;
-    background: #000000cf;
+    background: black;
     align-items: center;
     transition: 100ms;
 }
