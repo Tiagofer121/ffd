@@ -1,12 +1,11 @@
 :root {
-    --violeta-lumea: #6f08c2;
+    --Evolum: #082bc2;
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     transition: 100ms;
-    outline: none;
     text-align: center;
 
 }
@@ -17,6 +16,11 @@
 }
 body{
     background-color: black;
+}
+a:focus,
+a:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .menu {
     width: 90%;
@@ -31,6 +35,7 @@ body{
     align-items: center;
     border-radius: 30px;
     backdrop-filter: blur(1px);
+    transition: 100ms;
 }
 .opciones-texto-svg {
     width: 50px;
@@ -41,9 +46,12 @@ svg.iconos-svg {
     width: 30px;
     height: 30px;
     margin: 0px 10px;
-}
-path.Logo-menu-svg-path {
     stroke: white;
+    cursor: pointer;
+}
+svg.iconos-svg:hover{
+    stroke: var(--Evolum);
+
 }
 p.opciones-menu-p {
     text-align: center;
@@ -80,16 +88,25 @@ a.boton-ver-pelicula-imagen-grande {
     width: fit-content;
     height: fit-content;
     margin: 0px 0px 60px;
-    background: #000000a1;
-    padding: 20px;
+    background: #00000069;
+    padding: 10px;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-family: 'MiFuente';
-    font-size: .8rem;
-    backdrop-filter: blur(2px);
+    font-size: 1rem;
     text-align: center;
-    transition: 100ms;
+    display: flex;
+    align-items: center;
 }
-a.boton-ver-pelicula-imagen-grande:hover{
-    background-color: black;
+a.boton-ver-pelicula-imagen-grande:hover {
+    background: #000000;
+}
+
+svg.play-svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+}
+svg.play-svg path {
+stroke: white;
 }
